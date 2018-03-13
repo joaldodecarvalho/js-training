@@ -21,30 +21,20 @@ test('promises def', () => {
  * Fazer junto
  */
 test('simple promise chaining', (done) => {
-    done();
+
+    simplePromise('Valor')
+        .then(v => console.log('Meu valor', v))
+        .then(() => done());
 });
 
 /**
  * Fazer junto
  */
 test('simple promise error catching chaining', (done) => {
-    done();
-});
 
-/**
- * Exercício 3
- * 
- * Refatorar o exercício dos callbacks (#2) para utilizar Promises conforme exemplo mostrado anteriormente
- */
-test('refactoring callback exercise', () => {
-
-});
-
-/**
- * Exercício 4
- * 
- * Refatorar o exercício do encadeamento dos callbacks para utilizar o encadeamento das promises.
- */
-test('refactoring callback chaining promises', () => {
-
+    simplePromise('Valor')
+        .then(v => console.log('Meu valor', v))
+        .then(done())
+        .catch(error => console.log('Erro', error))
+        .then(() => done())
 });

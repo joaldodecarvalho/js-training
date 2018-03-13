@@ -1,4 +1,3 @@
-
 export const callbackDef = {
     definicoes: [
         'Função que será chamada quando algo vai acontecer',

@@ -21,7 +21,7 @@ export const promiseDef = {
 
 export const simplePromise = (value) => new Promise((resolve, reject) => {
 
-    if(!!value) {
+    if (!!value) {
         resolve(value);
     } else {
         reject('Invalid value');

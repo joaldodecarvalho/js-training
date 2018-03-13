@@ -36,6 +36,6 @@ const johnConcisePropertyDynamic = {
     ['email']: email
 };
 
-const pessoas = [ johnLiteral, johnProperty, johnPropertyKey, johnDinamicProperty ];
+const pessoas = [johnLiteral, johnProperty, johnPropertyKey, johnDinamicProperty];
 
 module.exports = { definicao, johnLiteral, johnProperty, johnPropertyKey, johnDinamicProperty, johnConciseProperty, pessoas };

@@ -12,9 +12,9 @@ test('sync object', () => {
 test('async object', () => {
 
     expect(asyncObject.definicoes).toBeDefined();
-    expect(asyncObject.definicoes[0]).toEqual('Várias coisas acontecendo ao mesmo tempo',);
+    expect(asyncObject.definicoes[0]).toEqual('Várias coisas acontecendo ao mesmo tempo', );
     expect(asyncObject.definicoes[1]).toEqual('Não bloqueante');
-    expect(asyncObject.definicoes[2]).toEqual('Inicia várias funções ao mesmo tempo, e você é notificado na conclusão da execução');    
+    expect(asyncObject.definicoes[2]).toEqual('Inicia várias funções ao mesmo tempo, e você é notificado na conclusão da execução');
 });
 
 test('sync sum example', () => {
@@ -25,14 +25,14 @@ test('sync sum example', () => {
 
 test('sync concat example', () => {
 
-    const result = syncConcatExample('Eduardo',  'Gardin');
+    const result = syncConcatExample('Eduardo', 'Gardin');
     expect(result).toEqual('EduardoGardin');
 });
 
 test('async example', (done) => {
 
     const wait = 2000;
-    const successFunction = (value) => {        
+    const successFunction = value => {
         expect(value).toEqual(`Called after ${wait} seconds`);
         done();
     };
